@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome');     // Questa funzione va a recuperare un file che si chiama welcome.blade.php nella cartella resources/views
+});
+
+Route::get('/chi-siamo', function () {
+    return view('about');
 });
